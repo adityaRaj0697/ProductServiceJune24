@@ -20,6 +20,7 @@ public class ApplicationConfig {
     public RedisTemplate<String, Object> getRedisTemplate(RedisConnectionFactory redisConnectionFactory) {
         RedisTemplate<String, Object> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(redisConnectionFactory);
+        System.out.println("Adding a comment just to test git remote commands");
         return redisTemplate;
     }
 }
